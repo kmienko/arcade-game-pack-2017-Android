@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gra1reakcja"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.kamil.a321321312321myapplication.Gra1Reakcja"
+
+   >
+
+    <Button
+        android:id="@+id/powrót"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_margin="40px"
+
+        android:layout_weight="1"
+
+        android:background="@drawable/button_ksztalt"
+        android:text="wróć"
+
+
+        />
+
+    <Button
+        android:text="start"
+        android:id="@+id/restart"
+
+        android:layout_alignParentBottom="true"
+
+
+        android:background="@drawable/button_ksztalt"
+
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:radius="14dp"
+        android:layout_weight="1"
+
+        android:layout_margin="40px"
+
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:minWidth="100dip"
+        android:minHeight="164dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/dotykg1"
+            android:elevation="1dp"
+            >
+
+            <TextView
+                android:id="@+id/wynik1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:gravity="center"
+
+                android:text="START"
+                android:textColor="@android:color/white"
+                android:textSize="47sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

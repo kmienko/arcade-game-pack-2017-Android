@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gra3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kamil.a321321312321myapplication.Gra3"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:orientation="vertical"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/napisG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Dobrze: zielony"
+            android:textColor="@color/green"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/napisD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Zle: zielony"
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <ProgressBar
+            android:id="@+id/pasek"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.11">
+
+            <RadioGroup
+                android:id="@+id/radiogrupa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.24"
+                android:checkedButton="@+id/easy"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/lradio"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_weight="0.2"
+                    android:buttonTint="@color/green"
+                    android:checked="true"
+                    android:text="6"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/sradio"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginRight="42dp"
+                    android:layout_weight="0.2"
+                    android:buttonTint="@color/yellow"
+                    android:text="12"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/pradio"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.2"
+                    android:buttonTint="@color/red"
+                    android:text="20"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radiotrudnosc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.24"
+                android:checkedButton="@+id/easy"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/easy"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_weight="0.2"
+                    android:buttonTint="@color/green"
+                    android:checked="true"
+                    android:text="Easy"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/mid"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginRight="42dp"
+                    android:layout_weight="0.2"
+                    android:buttonTint="@color/yellow"
+                    android:text="Med"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/epic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.2"
+                    android:buttonTint="@color/red"
+                    android:text="EPIC"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="26"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="115dp"
+
+            android:layout_height="45dp"
+
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ksztalt"
+            android:radius="14dp"
+
+            android:text="start"
+
+            />
+
+        <Button
+            android:id="@+id/powrót"
+            android:layout_width="115dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+
+            android:layout_weight="1"
+
+            android:background="@drawable/button_ksztalt"
+            android:text="wróć"
+
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
